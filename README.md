@@ -41,7 +41,7 @@ AlgoMind is packed with features designed to streamline your interview preparati
 
 Experience AlgoMind for yourself:
 
-**[http://13.127.77.21)**
+**[http://13.127.77.21]**
 
 You can use the following credentials to log in and test the application, or feel free to register your own account!
 - **Email:** `sambangialex@gmail.com`
@@ -73,7 +73,7 @@ To get a local copy up and running, follow these simple steps.
 
 1.  **Clone the repository:**
     ```sh
-    git clone [https://github.com/sambangiadharsh/AlgoMind)
+    git clone [https://github.com/sambangiadharsh/AlgoMind]
     cd AlgoMind
     ```
 
