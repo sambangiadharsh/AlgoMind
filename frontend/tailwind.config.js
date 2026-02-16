@@ -1,25 +1,5 @@
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: [
-//     "./index.html",
-//     "./src/**/*.{js,ts,jsx,tsx}",
-//   ],
-//   // We're using the 'class' strategy for dark mode.
-//   // This means we'll toggle a 'dark' class on the <html> element.
-//   darkMode: 'class',
-//   theme: {
-//     extend: {
-//       fontFamily: {
-//         // Sets 'Inter' as the default sans-serif font for the project.
-//         sans: ['Inter', 'sans-serif'],
-//       },
-//     },
-//   },
-//   plugins: [],
-// }
+import typography from '@tailwindcss/typography'
 
-
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
@@ -45,6 +25,7 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [typography],
+
 }
 

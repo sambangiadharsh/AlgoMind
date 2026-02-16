@@ -93,6 +93,10 @@ useEffect(() => {
           </p>
         </div>
 
+        <div className="space-x-6">
+       
+      </div>
+
         {/* Benefits list */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-2xl mx-auto mt-6">
           {benefits.map((benefit, index) => (

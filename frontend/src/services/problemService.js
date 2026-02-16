@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = '/api/problems';
+const API_URL = `${import.meta.env.VITE_API_URL}/api/problems`;
 
 const createProblem = async (problemData, token) => {
   const config = { headers: { Authorization: `Bearer ${token}` } };

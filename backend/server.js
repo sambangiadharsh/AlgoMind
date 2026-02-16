@@ -7,7 +7,8 @@ import settingsRoutes from './routes/settingsRoutes.js';
 import revisionRoutes from './routes/revisionRoutes.js';
 import statsRoutes from './routes/statsRoutes.js';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
-
+import ragroute from './routes/ragRoute.js';
+import cors from 'cors';
 // Load environment variables
 dotenv.config();
 
@@ -15,6 +16,10 @@ dotenv.config();
 connectDB();
 
 const app = express();
+app.use(cors({
+  origin:["http://localhost:5173", "https://frontend.onrender.com"],
+  credentials: true,
+}));
 
 // Middleware to parse JSON request bodies
 app.use(express.json());
@@ -29,6 +34,7 @@ app.use('/api/problems', problemRoutes);
 app.use('/api/settings', settingsRoutes);
 app.use('/api/revision', revisionRoutes);
 app.use('/api/stats', statsRoutes);
+app.use('/api/chat',ragroute);
 
 // --- Custom Error Handling Middleware ---
 app.use(notFound);

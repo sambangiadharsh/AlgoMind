@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = '/api/stats';
+const API_URL = `${import.meta.env.VITE_API_URL}/api/stats`;
 
 export const getStats = async (token) => {
      const config = { headers: { Authorization: `Bearer ${token}` } };

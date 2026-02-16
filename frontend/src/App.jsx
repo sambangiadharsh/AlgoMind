@@ -13,9 +13,10 @@ import AddProblemPage from './pages/AddProblemPage.jsx';
 import EditProblemPage from './pages/EditProblemPage.jsx';
 import RevisionPage from './pages/RevisionPage.jsx';
 import SettingsPage from './pages/SettingsPage.jsx';
-
+import FloatingAIButton from './components/common/FloatingAIButton.jsx';
 import ProfilePage from './pages/ProfilePage.jsx';
 import { useTheme } from "./context/ThemeContext";
+
 
 function App() {
      const location = useLocation();
@@ -52,11 +53,13 @@ function App() {
                <Route path="/problem/:id/edit" element={<PrivateRoute><EditProblemPage /></PrivateRoute>} />
                <Route path="/revision" element={<PrivateRoute><RevisionPage /></PrivateRoute>} />
                <Route path="/settings" element={<PrivateRoute><SettingsPage /></PrivateRoute>} />
+               
               
                </Routes>
           </div>
           </main>
           {!isAuthPage && <Footer />}
+          {!isAuthPage && <FloatingAIButton />}
      </div>
      );
 }
