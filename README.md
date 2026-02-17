@@ -7,7 +7,7 @@
 <h3 align="center">Never forget a coding problem again. Master your Data Structures and Algorithms preparation for tech interviews.</h3>
 
 <p align="center">
-  <a href="https://algorecall-vert.vercel.app/" target="_blank">
+  <a href="https://algomind-frontend.onrender.com" target="_blank">
     <img src="https://img.shields.io/badge/Live_Demo-Open_App-blue?style=for-the-badge&logo=vercel" alt="Live Demo"/>
   </a>
 </p>
